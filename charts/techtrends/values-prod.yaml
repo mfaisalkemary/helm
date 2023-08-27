@@ -3,7 +3,7 @@ replicaCount: 3
 namespace:
   name: prod
 image:
-  repository: techtrends
+  repository: mfaisal/techtrends
   pullPolicy: IfNotPresent
   tag: latest
 
@@ -16,10 +16,10 @@ service:
 resources: 
   limits:
     cpu: 500m
-    memory: 128Mi
+    memory: 256Mi
   requests:
-    cpu: 300m
-    memory: 300Mi
+    cpu: 305m
+    memory: 128Mi
 
 livenessProbe:
   path: /healthz
