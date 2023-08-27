@@ -3,7 +3,7 @@ replicaCount: 3
 namespace:
   name: staging
 image:
-  repository: techtrends
+  repository: mfaisal/techtrends
   pullPolicy: IfNotPresent
   tag: latest
 
